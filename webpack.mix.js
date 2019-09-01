@@ -13,12 +13,7 @@ const mix = require('laravel-mix');
 
 mix.js('resources/js/app.js', 'public/js')
     .sourceMaps()
-    .sass('resources/sass/app.scss', 'public/css')
-    .styles([
-   	    'node_modules/admin-lte/plugins/fontawesome-free/css/all.min.css',
-   	    'node_modules/admin-lte/plugins/icheck-bootstrap/icheck-bootstrap.min.css',
-   	], 'public/css/plugins.css')
-    .copy('node_modules/admin-lte/plugins/fontawesome-free/webfonts', 'public/webfonts');
+    .sass('resources/sass/app.scss', 'public/css');
 
 if (mix.inProduction()) {
     mix.version();

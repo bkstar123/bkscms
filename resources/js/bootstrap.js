@@ -11,6 +11,13 @@ try {
     window.$ = window.jQuery = require('jquery');
 
     require('bootstrap');
+    require('jquery-ui-dist/jquery-ui.js');
+
+    window.moment = require('moment');
+    require('daterangepicker');
+
+    require('@fortawesome/fontawesome-free');
+    
     require('admin-lte');
 } catch (e) {}
 
