@@ -18,21 +18,24 @@
     </script>
     @stack('scriptTop')
 </head>
-<body class="hold-transition sidebar-mini layout-fixed">
-@guest 
-    @yield('content') 
+@guest
+    <body class="hold-transition login-page">
+        @yield('content')
+        @stack('scriptBottom')
+    </body>
 @else
-<div class="wrapper" id="app">
-    <!-- NavBar -->
-    @include('layouts.components.navbar')
-    <!-- SideBar -->
-    @include('layouts.components.sidebar')
-    <!-- Contents -->
-    @include('layouts.components.contents')
-    <!-- Footer -->
-    @include('layouts.components.footer')
-</div><!-- ./wrapper -->
+    <body class="hold-transition sidebar-mini layout-fixed">
+        <div class="wrapper" id="app">
+            <!-- NavBar -->
+            @include('layouts.components.navbar')
+            <!-- SideBar -->
+            @include('layouts.components.sidebar')
+            <!-- Contents -->
+            @include('layouts.components.contents')
+            <!-- Footer -->
+            @include('layouts.components.footer')
+        </div><!-- ./wrapper -->
+        @stack('scriptBottom')
+    </body>
 @endguest
-@stack('scriptBottom')
-</body>
 </html>
