@@ -9,7 +9,7 @@
             </a>
         </li>
         <li class="nav-item d-none d-sm-inline-block">
-            <a href="index3.html" 
+            <a href="{{ route('dashboard.index') }}" 
                 class="nav-link">Dashboard
             </a>
         </li>
@@ -17,10 +17,17 @@
     <!-- Right navbar links -->
     <ul class="navbar-nav ml-auto">
         <li class="nav-item d-none d-sm-inline-block">
-            <a href="#" 
-                class="nav-link">
+            <a href="{{ route('admins.logout') }}" 
+                class="nav-link"
+                onclick="event.preventDefault(); $('#logout-form').submit();">
                 Sign Out
             </a>
+            <form id="logout-form" 
+                   action="{{ route('admins.logout') }}" 
+                   method="POST" 
+                   style="display: none;">
+                {{ csrf_field() }}
+            </form>
         </li>
     </ul>
 </nav><!-- /.navbar -->
