@@ -20,6 +20,8 @@
 </head>
 @guest
     <body class="hold-transition login-page">
+        <!-- flashing message -->
+        @include('bkstar123_flashing::flashing')
         @yield('content')
         @stack('scriptBottom')
     </body>
@@ -34,6 +36,8 @@
             @include('layouts.components.contents')
             <!-- Footer -->
             @include('layouts.components.footer')
+            <!-- flashing message -->
+            @include('bkstar123_flashing::flashing')
         </div><!-- ./wrapper -->
         @stack('scriptBottom')
     </body>
