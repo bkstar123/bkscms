@@ -8,9 +8,10 @@
     <title>
         {{ config('app.name') }} | @yield('title')
     </title>
-    <link href="{{ mix('/css/app.css') }}" rel="stylesheet">
+    <link href="{{ mix('/cms-assets/css/app.css') }}" rel="stylesheet">
     @stack('css')
-    <script src="{{ mix('/js/app.js') }}"></script>
+    <script src="{{ mix('/cms-assets/js/app.js') }}"></script>
+    <script src="{{ mix('/cms-assets/js/plugins.js') }}"></script>
     <script>
         window.Laravel = {!! json_encode([
             'csrfToken' => csrf_token(),
@@ -29,13 +30,13 @@
     <body class="hold-transition sidebar-mini layout-fixed">
         <div class="wrapper" id="app">
             <!-- NavBar -->
-            @include('layouts.components.navbar')
+            @include('cms.layouts.components.navbar')
             <!-- SideBar -->
-            @include('layouts.components.sidebar')
+            @include('cms.layouts.components.sidebar')
             <!-- Contents -->
-            @include('layouts.components.contents')
+            @include('cms.layouts.components.contents')
             <!-- Footer -->
-            @include('layouts.components.footer')
+            @include('cms.layouts.components.footer')
             <!-- flashing message -->
             @include('bkstar123_flashing::flashing')
         </div><!-- ./wrapper -->

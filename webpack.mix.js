@@ -11,9 +11,14 @@ const mix = require('laravel-mix');
  |
  */
 
-mix.js('resources/js/app.js', 'public/js')
+mix.js('resources/cms-assets/js/app.js', 'public/cms-assets/js')
+    .js('resources/cms-assets/js/vue-app.js', 'public/cms-assets/js')
+    .scripts([
+        'resources/cms-assets/js/plugins/multiselect/multiselect.min.js'
+    ], 'public/cms-assets/js/plugins.js')
     .sourceMaps()
-    .sass('resources/sass/app.scss', 'public/css');
+    .sass('resources/cms-assets/sass/app.scss', 'public/cms-assets/css')
+    .copy('resources/cms-assets/img', 'public/cms-assets/img');
 
 if (mix.inProduction()) {
     mix.version();

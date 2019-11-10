@@ -11,6 +11,9 @@
 |
 */
 
-Route::get('/', function () {
-    return view('welcome');
-});
+Route::redirect('/', '/cms/admins/login');
+
+Route::get('/cms/dashboard', function () {
+    return view('cms.dashboard');
+})->name('dashboard.index')
+  ->middleware('bkscms-auth:admins');

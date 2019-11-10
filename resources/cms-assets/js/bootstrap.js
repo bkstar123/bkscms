@@ -19,6 +19,7 @@ try {
     require('@fortawesome/fontawesome-free');
     
     require('admin-lte');
+    require('@bkstar18/jquery-ajax-uploader');
 } catch (e) {}
 
 /**
