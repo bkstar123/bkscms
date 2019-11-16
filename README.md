@@ -21,5 +21,5 @@ cd <your project>
 php artisan bkscms:install
 ```  
 
-Visit the application in browsers and log in to it with the credentials ***superadmin/superadmin1@***. Then, create a real user and assign it with **superadmins** role. Finally, disable the default **superadmin** & **administrator** for security reason.  
+Visit the application in browsers and log in to it with the credentials ***superadmin/superadmin1@***. Then, create a real user and assign it with **superadmins** role. Finally, disable the default **superadmin** & **administrator** user for security reason.  
 
