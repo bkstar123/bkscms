@@ -16,6 +16,10 @@ For the time of writing, the following features are included:
 Update **.env** file with the necessary key/value settings such as database, queue, mail, google recaptcha and so on.  
 
 &ndash; Install BKSCMS project:
-```cd <your project>  
-   php artisan bkscms:install```
+```
+cd <your project>  
+php artisan bkscms:install
+```  
+
+Visit the application in browsers and log in to it with the credentials ***superadmin/superadmin1@***. Then, create a real user and assign it with **superadmins** role. Finally, disable the default **superadmin** & **administrator** for security reason.  
 
