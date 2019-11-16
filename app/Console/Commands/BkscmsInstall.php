@@ -68,9 +68,6 @@ class BkscmsInstall extends Command
     protected function deploy()
     {
         $this->call('storage:link');
-        if (config('bkstar123_bkscms_adminpanel.useQueue')) {
-            $this->call('queue:table');
-        }
         $this->call('migrate:refresh');
         $this->call('bkscms:initAuth', [
             '--scope' => 'all'
