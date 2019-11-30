@@ -1,7 +1,7 @@
 <aside class="main-sidebar sidebar-dark-primary elevation-4">
     <!-- Brand Logo -->
     <a href="{{ route('dashboard.index') }}" 
-        class="brand-link navbar-maroon">
+        class="brand-link navbar-olive">
         <img src="/cms-assets/img/siteLogo.png" 
               alt="Site Logo" 
               class="brand-image img-circle elevation-3"
