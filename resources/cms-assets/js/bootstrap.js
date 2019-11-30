@@ -14,7 +14,7 @@ try {
     require('jquery-ui-dist/jquery-ui.js');
 
     window.moment = require('moment');
-    require('daterangepicker');
+    require('jquery-datetimepicker');
 
     require('@fortawesome/fontawesome-free');
     
