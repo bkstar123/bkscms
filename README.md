@@ -3,7 +3,7 @@
 > This is a Laravel based generic content management system (CMS) which is integrated with AdminLTE for UI part. The features are very basic and it only serves for the purpose of saving you from doing some boilerplate coding.  
 
 For the time of writing, the following features are included:  
-- Admin Panel with authentication & authorization  
+- Admin Panel with authentication & authorization (see https://github.com/bkstar123/bkscms-admin-panel for details)  
 
 ## 1. Installation
 
