@@ -37,9 +37,9 @@
             @include('cms.layouts.components.contents')
             <!-- Footer -->
             @include('cms.layouts.components.footer')
-            <!-- flashing message -->
-            @include('bkstar123_flashing::flashing')
         </div><!-- ./wrapper -->
+        <!-- flashing message -->
+        @include('bkstar123_flashing::flashing')
         @stack('scriptBottom')
     </body>
 @endguest
