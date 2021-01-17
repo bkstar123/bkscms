@@ -4,7 +4,6 @@
 /public/cms-assets
 /public/fonts
 /public/images
-/public/img
 /storage/*.key
 /vendor
 .env
